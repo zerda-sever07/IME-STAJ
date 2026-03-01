@@ -1,4 +1,4 @@
-### 3. Hafta: Uygulama Geliştirme Süreci, Git Entegrasyonu ve Docker Kullanımı
+## 3. Hafta: Uygulama Geliştirme Süreci, Git Entegrasyonu ve Docker Kullanımı
 Bu hafta, önceki haftalarda edinilen teorik altyapının pratiğe dökülmesi hedeflenmiş ve yazılım geliştirme sürecinde kullanılan araçların entegre şekilde uygulanmasına odaklanılmıştır. Özellikle konteyner tabanlı geliştirme ortamı ve versiyon kontrol sistemlerinin aktif kullanımı üzerine çalışmalar gerçekleştirilmiştir.
 ### Yapılan Çalışmalar
 Bu doğrultuda Docker altyapısı kullanılarak PHP tabanlı bir başlangıç projesi oluşturulmuştur. Geliştirme ortamı Docker konteynerleri üzerinden yapılandırılmış ve uygulamanın temel giriş noktası olarak index.php dosyası hazırlanmıştır. Böylece PHP uygulamalarının izole ve taşınabilir ortamlarda çalıştırılması deneyimlenmiş, servislerin konteyner yapısı içerisindeki işleyişi gözlemlenmiştir.
