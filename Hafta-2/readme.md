@@ -18,5 +18,3 @@ Notepad++
 ### İncelenen Kaynaklar
 https://laravel.com/docs/12.x/installation
 https://www.geeksforgeeks.org/software-engineering/mvc-framework-introduction/
-
-https://github.com/zerda-sever07/IME-STAJ
