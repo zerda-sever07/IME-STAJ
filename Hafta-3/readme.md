@@ -18,7 +18,5 @@ Visual Studio Code (VS Code)
 Git
 GitHub
 Discord
-
 GitHub
 
-https://github.com/zerda-sever07/IME-STAJ
