@@ -1,4 +1,4 @@
-### 2. Hafta: Framework Teknolojileri ve MVC Mimarisi İncelemesi
+## 2. Hafta: Framework Teknolojileri ve MVC Mimarisi İncelemesi
 Bu hafta, günümüz yazılım geliştirme süreçlerinde sıklıkla tercih edilen framework yapıları ve mimari yaklaşımlar üzerine çalışmalar yapılmıştır. İşletme tarafından paylaşılan teknik dokümanlar ve makaleler incelenerek konuya ilişkin teorik bilgi düzeyi artırılmıştır.
 Yapılan Çalışmalar
 İlk olarak Native PHP ile Laravel Framework arasındaki yapısal ve işleyiş farkları değerlendirilmiştir. Framework kullanımının geliştirme sürecini daha sistematik ve hızlı hale getirmesi, güvenlik risklerini azaltması ve sürdürülebilir projeler oluşturulmasına katkı sağlaması gibi avantajları ele alınmıştır. Bu doğrultuda hazır bileşenlerin ve belirli standartların yazılım geliştirme sürecine olan etkisi analiz edilmiştir.
