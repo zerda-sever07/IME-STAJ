@@ -54,9 +54,3 @@ Pagination (sayfalama) işlemi
 Laravel Herd ile modern geliştirme ortamı kullanımı
 
 SQLite veritabanı ile entegrasyon
-
-GitHub Proje Bağlantısı
-
-Projenin GitHub reposuna aşağıdaki bağlantıdan ulaşabilirsiniz:
-
-🔗 https://github.com/zerda-sever07/IME-STAJ
