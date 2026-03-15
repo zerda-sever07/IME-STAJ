@@ -1,4 +1,4 @@
-###5. Hafta – Laravel ile Dinamik Ürün Yönetimi ve Veritabanı Entegrasyonu
+#5. Hafta – Laravel ile Dinamik Ürün Yönetimi ve Veritabanı Entegrasyonu
 ##Yapılan Çalışmalar
 
 Bu hafta Laravel framework kullanılarak veritabanı tabanlı bir kitap listeleme sistemi geliştirilmiştir. Çalışma sırasında Laravel’in MVC (Model–View–Controller) mimarisi uygulanarak uygulamanın daha düzenli ve sürdürülebilir bir yapıda geliştirilmesi sağlanmıştır.
