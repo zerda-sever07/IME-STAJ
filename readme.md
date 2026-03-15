@@ -23,7 +23,7 @@ Backend tarafında BookController oluşturularak verilerin sayfalar halinde gös
 
 Son olarak kullanıcıların bu verilere web arayüzünden erişebilmesi için /odev-sonuc adlı bir rota tanımlanmış ve sistem tarayıcı üzerinden test edilmiştir.
 
-##Kullanılan Teknolojiler
+## Kullanılan Teknolojiler
 
 Laravel
 
@@ -35,7 +35,7 @@ GitHub
 
 SQLite
 
-##Kazanımlar
+## Kazanımlar
 
 Bu hafta yapılan çalışmalar sonucunda aşağıdaki konularda deneyim kazanılmıştır:
 
