@@ -1,0 +1,23 @@
+#7. Hafta – Yazılım Geliştirme Süreçleri ve Ekip Çalışması
+##Yapılan Çalışmalar
+Bu hafta gerçekleştirilen çalışmalar kapsamında yazılım geliştirme süreci yalnızca kod yazma odaklı değil; aynı zamanda ekip çalışması, sürüm kontrol sistemlerinin etkin kullanımı ve performans optimizasyonu gibi kritik başlıklar çerçevesinde ele alınmıştır. Bu doğrultuda özellikle Git iş akışları, önbellekleme (caching) mekanizmaları ve ekip içi iş birliği standartları üzerine kapsamlı çalışmalar yapılmıştır.
+Öncelikle ekip olarak aynı proje üzerinde eş zamanlı ve düzenli bir şekilde çalışabilmek için Git tabanlı versiyon kontrol süreçleri aktif olarak uygulanmıştır. Proje dizini üzerinde yapılan her değişiklik, belirli bir disiplin içerisinde commit edilerek kayıt altına alınmıştır. Commit mesajlarının açıklayıcı, anlamlı ve standartlara uygun şekilde yazılmasına özen gösterilmiştir. Bu sayede proje geçmişinin (version history) izlenebilirliği artırılmış ve yapılan değişikliklerin hangi amaçla gerçekleştirildiği açık bir şekilde belgelenmiştir.
+Geliştirme sürecinde doğrudan ana dal (main branch) üzerinde işlem yapmak yerine daha kontrollü bir yapı oluşturmak amacıyla Pull Request (PR) mekanizması kullanılmıştır. Her geliştirici kendi üzerinde çalıştığı özelliği ayrı bir dalda (branch) geliştirmiş, ardından bu değişiklikleri Pull Request aracılığıyla ana projeye dahil edilmek üzere sunmuştur. Açılan PR’lar ekip üyeleri tarafından incelenmiş, gerekli görülen düzenlemeler yapıldıktan sonra onaylanarak ana dala entegre edilmiştir. Bu süreç hem kod kalitesini artırmış hem de ekip içi bilgi paylaşımını güçlendirmiştir.
+Birleştirme (merge) işlemleri sırasında ortaya çıkan çakışmalar (conflict) üzerinde özellikle durulmuş ve bu problemlerin çözüm yöntemleri uygulamalı olarak öğrenilmiştir. Aynı dosya üzerinde birden fazla geliştiricinin değişiklik yapması sonucu oluşan bu çakışmalar Git araçları kullanılarak analiz edilmiş ve manuel müdahaleler ile çözüme kavuşturulmuştur.
+Performans iyileştirme çalışmaları kapsamında uygulamanın daha hızlı ve verimli çalışabilmesi için önbellekleme (caching) sistemleri incelenmiştir. Sık değişmeyen ve sürekli veritabanından çekilen verilerin (örneğin ders listeleri gibi) önbellekte tutulması sağlanarak gereksiz sorgular azaltılmıştır. Bu sayede uygulama performansı artırılmıştır. Ayrıca veri güncellendiğinde önbelleğin temizlenmesi (cache invalidation) ve yeniden oluşturulması sağlanarak veri tutarlılığı korunmuştur.
+Ekip çalışmasının verimli yürütülebilmesi için ortak kod yazım standartları belirlenmiş ve tüm ekip üyelerinin bu standartlara uygun geliştirme yapması sağlanmıştır. Kod okunabilirliği, isimlendirme kuralları ve dosya düzeni belirli bir sistematik yapıya oturtulmuştur.
+Proje yapısı modüler hale getirilerek Model–View–Controller (MVC) mimarisi benimsenmiştir. Bu sayede uygulama katmanlara ayrılmış, her katmanın sorumlulukları netleştirilmiş ve ekip üyelerinin farklı modüller üzerinde paralel çalışabilmesi sağlanmıştır.
+Ayrıca proje sürecinde yapılan tüm çalışmalar Markdown formatında dokümante edilmiştir. Bu sayede proje için kalıcı bir bilgi kaynağı oluşturulmuş ve sürdürülebilirlik artırılmıştır.
+Not: Bu hafta yapılan çalışmalar, Stajyer Takip Programı projesi üzerinde uygulanmıştır. Ekip üyeleri kendi sorumlu oldukları modüller üzerinde çalışmış, yapılan geliştirmeler Pull Request (PR) ile kontrol edilerek proje yöneticisi tarafından ana projeye dahil edilmiştir.
+##Kullanılan Teknolojiler ve Araçlar
+Laravel (PHP Framework)
+Visual Studio Code
+Git & GitHub
+SQLite
+Herd
+##Kazanımlar
+Bu hafta gerçekleştirilen çalışmalar sonucunda yazılım geliştirme sürecinin çok yönlü bir yapıdan oluştuğu anlaşılmıştır. Kod yazmanın yanı sıra ekip içi iletişim, sürüm kontrol yönetimi ve performans optimizasyonunun da sürecin önemli parçaları olduğu görülmüştür.
+Git kullanımı sayesinde proje geçmişinin düzenli bir şekilde yönetilmesi, yapılan değişikliklerin takip edilebilir olması ve ekip içi koordinasyonun sağlanması konularında deneyim kazanılmıştır. Pull Request (PR) süreçleri ile kod inceleme (code review) pratiği geliştirilmiş ve kod kalitesi artırılmıştır.
+Önbellekleme mekanizmaları sayesinde uygulama performansının nasıl artırılabileceği ve veritabanı yükünün nasıl azaltılabileceği öğrenilmiştir. Ayrıca veri tutarlılığının korunması için önbellek yönetiminin önemi kavranmıştır.
+MVC mimarisi ile modüler yazılım geliştirme yaklaşımı benimsenmiş ve bu sayede daha düzenli, okunabilir ve sürdürülebilir projeler geliştirilebileceği anlaşılmıştır.
+Son olarak dokümantasyon alışkanlığı kazanılmış ve yapılan çalışmaların kayıt altına alınmasının proje yönetimi açısından büyük önem taşıdığı görülmüştür.
