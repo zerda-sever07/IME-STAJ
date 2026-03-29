@@ -11,9 +11,13 @@ Ayrıca proje sürecinde yapılan tüm çalışmalar Markdown formatında doküm
 Not: Bu hafta yapılan çalışmalar, Stajyer Takip Programı projesi üzerinde uygulanmıştır. Ekip üyeleri kendi sorumlu oldukları modüller üzerinde çalışmış, yapılan geliştirmeler Pull Request (PR) ile kontrol edilerek proje yöneticisi tarafından ana projeye dahil edilmiştir.
 ## Kullanılan Teknolojiler ve Araçlar
 Laravel (PHP Framework)
+
 Visual Studio Code
+
 Git & GitHub
+
 SQLite
+
 Herd
 ## Kazanımlar
 Bu hafta gerçekleştirilen çalışmalar sonucunda yazılım geliştirme sürecinin çok yönlü bir yapıdan oluştuğu anlaşılmıştır. Kod yazmanın yanı sıra ekip içi iletişim, sürüm kontrol yönetimi ve performans optimizasyonunun da sürecin önemli parçaları olduğu görülmüştür.
