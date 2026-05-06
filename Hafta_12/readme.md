@@ -73,8 +73,6 @@ Uygulama geliştirme sürecinde CLI tabanlı WebSocket yapısının daha iyi anl
   - Fiyat bilgisi  
   - Detay alanı bulunmaktadır  
 
-📸 *(Ana sayfa görseli buraya eklenecek)*
-
 ---
 
 ### 3.2 Kitap Listeleme ve Arama
@@ -83,7 +81,6 @@ Uygulama geliştirme sürecinde CLI tabanlı WebSocket yapısının daha iyi anl
 - Arama çubuğu ile filtreleme yapılabilmektedir  
 - Sonuçlar dinamik olarak güncellenmektedir  
 
-📸 *(Listeleme görseli buraya eklenecek)*
 
 ---
 
@@ -95,7 +92,6 @@ Uygulama geliştirme sürecinde CLI tabanlı WebSocket yapısının daha iyi anl
 - Yazar bilgisi  
 - Fiyat  
 
-📸 *(Detay sayfası görseli buraya eklenecek)*
 
 ---
 
@@ -104,7 +100,6 @@ Uygulama geliştirme sürecinde CLI tabanlı WebSocket yapısının daha iyi anl
 - Kullanıcı kitap satın alabilmektedir  
 - Satın alma süreci basit ve anlaşılır şekilde tasarlanmıştır  
 
-📸 *(Satın alma görseli buraya eklenecek)*
 
 ---
 
@@ -114,7 +109,6 @@ Uygulama geliştirme sürecinde CLI tabanlı WebSocket yapısının daha iyi anl
 - Kullanıcı mesaj gönderebilmektedir  
 - Basit ve kullanıcı dostu tasarım tercih edilmiştir  
 
-📸 *(İletişim sayfası görseli buraya eklenecek)*
 
 ---
 
@@ -124,7 +118,6 @@ Uygulama geliştirme sürecinde CLI tabanlı WebSocket yapısının daha iyi anl
 - Kullanıcılara sunulan hizmetler belirtilmiştir  
 - Kitaplara kolay erişim hedeflenmiştir  
 
-📸 *(Hakkımızda görseli buraya eklenecek)*
 
 ---
 
