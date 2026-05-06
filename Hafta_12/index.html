@@ -1,0 +1,294 @@
+<!DOCTYPE html>
+<html lang="tr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Kitap Dünyası | Yeni Nesil Kitap Platformu</title>
+    <!-- Google Fonts -->
+    <link href="https://fonts.googleapis.com/css2?family=Lora:ital,wght@0,400;0,500;0,600;0,700;1,400&family=Playfair+Display:ital,wght@0,400;0,600;0,700;0,800;1,400&display=swap" rel="stylesheet">
+    <!-- FontAwesome Hooks -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <!-- Animasyonlu Arka Plan Çemberleri -->
+    <div class="bg-circle bg-circle-1"></div>
+    <div class="bg-circle bg-circle-2"></div>
+    <div class="bg-circle bg-circle-3"></div>
+
+    <!-- Navigasyon Menüsü -->
+    <nav class="navbar glass-effect">
+        <div class="logo">
+            <i class="fa-solid fa-book-open gradient-text"></i>
+            <span>Kitap</span>Dünyası
+        </div>
+        <ul class="nav-links">
+            <li><a href="#home">Ana Sayfa</a></li>
+            <li><a href="#popular">Popüler</a></li>
+            <li class="dropdown">
+                <a href="#books" class="dropbtn">Kategoriler <i class="fa-solid fa-chevron-down nav-icon"></i></a>
+                <ul class="dropdown-content glass-effect">
+                    <li><a href="#books" onclick="filterCategory('Roman')">Roman</a></li>
+                    <li><a href="#books" onclick="filterCategory('Dünya Klasikleri')">Dünya Klasikleri</a></li>
+                    <li><a href="#books" onclick="filterCategory('Polisiye')">Polisiye</a></li>
+                    <li><a href="#books" onclick="filterCategory('Tarih')">Tarih</a></li>
+                </ul>
+            </li>
+            <li><a href="#about">Hakkımızda</a></li>
+            <li><a href="#contact">İletişim</a></li>
+        </ul>
+        <button class="menu-btn"><i class="fa-solid fa-bars"></i></button>
+    </nav>
+
+    <!-- Giriş Bölümü -->
+    <header id="home" class="hero">
+        <div class="hero-content">
+            <span class="badge">🌹 Edebi Bir Yolculuğa Çıkın</span>
+            <h1 class="hero-title">Zamansız Eserleri<br><span class="gradient-text">Keşfetmeye Hazır Mısın?</span></h1>
+            <p class="hero-desc">Geçmişin büyüleyici atmosferinde kaybolun, kalbinize dokunan romanları ve tarihe kazınmış başyapıtları hemen inceleyin.</p>
+            <div class="hero-actions">
+                <a href="#books" class="btn btn-primary">Kitaplara Göz At <i class="fa-solid fa-arrow-right"></i></a>
+                <a href="#about" class="btn btn-outline">Daha Fazla Bilgi</a>
+            </div>
+        </div>
+        <div class="hero-visual">
+            <div class="book-mockup">
+                <img src="img/gurur_ve_önyargi.jpg" alt="Kitaplık">
+                <div class="floating-card glass-effect card-top">⭐ 5.0 Değerlendirme</div>
+                <div class="floating-card glass-effect card-bottom">🚀 Hızlı Teslimat</div>
+            </div>
+        </div>
+    </header>
+
+    <!-- Yarı Saydam Kategori Şeridi -->
+    <div class="category-strip glass-effect">
+        <div class="cat-item" onclick="filterCategory('Roman')"><i class="fa-solid fa-feather-pointed"></i> Roman</div>
+        <div class="cat-item" onclick="filterCategory('Dünya Klasikleri')"><i class="fa-solid fa-crown"></i> Klasikler</div>
+        <div class="cat-item" onclick="filterCategory('Polisiye')"><i class="fa-solid fa-user-secret"></i> Polisiye</div>
+        <div class="cat-item" onclick="filterCategory('Tarih')"><i class="fa-solid fa-monument"></i> Tarih</div>
+        <div class="cat-item" onclick="clearSearch()"><i class="fa-solid fa-book-open"></i> Tümü</div>
+    </div>
+
+    <!-- Popüler Kitaplar -->
+    <section id="popular" class="section container" style="padding-bottom: 50px;">
+        <div class="section-header text-center" style="width: 100%; display: flex; flex-direction: column; align-items: center;">
+            <h2 class="section-title">Popüler <span class="gradient-text">Kitaplar</span> <i class="fa-solid fa-fire" style="color: var(--error); font-size: 2rem;"></i></h2>
+            <p class="section-subtitle">Haftanın en çok okunan ve beğenilen eserleri</p>
+        </div>
+        <div class="book-grid" id="popularGrid">
+            <!-- Kitaplar JS ile buraya yüklenecek -->
+        </div>
+    </section>
+
+    <!-- Tüm Kitaplar (Arama ve Kitap Listeleme) -->
+    <section id="books" class="section container" style="padding-top: 50px;">
+        <div class="section-header search-header text-center" style="width: 100%; display: flex; flex-direction: column; align-items: center; gap: 15px;">
+            <h2 class="section-title">Aradığınız Kitabı <span class="gradient-text">Bulun</span></h2>
+            <p class="section-subtitle">Tüm liste veya arama sonuçları aşağıda gösterilmektedir.</p>
+            
+            <div class="search-bar-wrapper glass-effect">
+                <i class="fa-solid fa-magnifying-glass search-icon"></i>
+                <input type="text" id="searchInput" class="search-input" placeholder="Kitap veya yazar adı yazın..." oninput="searchBooks()">
+                <button class="btn btn-primary search-btn" onclick="searchBooks()">Tümünde Ara</button>
+            </div>
+            
+            <button class="btn btn-outline btn-sm mt-2" onclick="clearSearch()"><i class="fa-solid fa-rotate-left"></i> Filtreleri Temizle</button>
+        </div>
+        <div class="book-grid" id="mainGrid">
+            <!-- Kitaplar JS ile buraya yüklenecek -->
+        </div>
+    </section>
+
+    <!-- Hakkımızda -->
+    <section id="about" class="section glass-section">
+        <div class="container about-container">
+            <div class="about-image">
+                <img src="img/kitaplık.jpg" alt="Kütüphane">
+                <div class="image-overlay glass-effect">
+                    <h3>Misyonumuz</h3>
+                    <p>Okuma sevgisini aşılamak.</p>
+                </div>
+            </div>
+            <div class="about-content">
+                <h2 class="section-title">Güvenilir Kitap <span class="gradient-text">Rehberiniz</span></h2>
+                <p>Kitap Dünyası olarak amacımız; farklı türlerdeki kitapları bir arada sunarak, kullanıcıların kitaplar hakkında bilgi almasını sağlamak ve en çok aranan eserleri güvenli ve hızlı bir online e-ticaret altyapısıyla sizlere ulaştırmaktır.</p>
+                <p>Her yaşa ve zevke uygun zengin içeriklerimiz, "Kapıda Ödeme" kolaylığımız ve kullanıcı dostu arayüzümüzle hizmetinizdeyiz.</p>
+                
+                <div class="stats-grid">
+                    <div class="stat-box glass-effect">
+                        <i class="fa-solid fa-swatchbook"></i>
+                        <h4>5+</h4>
+                        <span>Kategori</span>
+                    </div>
+                    <div class="stat-box glass-effect">
+                        <i class="fa-solid fa-truck-fast"></i>
+                        <h4>İki Gün İçinde</h4>
+                        <span>Kargo Teslimi</span>
+                    </div>
+                    <div class="stat-box glass-effect">
+                        <i class="fa-solid fa-handshake"></i>
+                        <h4>%100</h4>
+                        <span>Güvenilir Ödeme</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- İletişim -->
+    <section id="contact" class="section container">
+        <div class="section-header text-center">
+            <h2 class="section-title">Bize <span class="gradient-text">Ulaşın</span></h2>
+            <p class="section-subtitle">Soru, görüş veya kitap taleplerinizi iletmek için mesaj gönderebilirsiniz.</p>
+        </div>
+
+        <div class="contact-wrapper">
+            <div class="contact-info glass-effect">
+                <h3>İletişim Bilgileri</h3>
+                <div class="info-line">
+                    <div class="icon-box"><i class="fa-solid fa-location-dot"></i></div>
+                    <div>
+                        <h4>Adres</h4>
+                        <p>Kütüphane Cad. Bilgi Sok. No:4/A, İstanbul</p>
+                    </div>
+                </div>
+                <div class="info-line">
+                    <div class="icon-box"><i class="fa-solid fa-envelope"></i></div>
+                    <div>
+                        <h4>E-Posta</h4>
+                        <p>destek@kitapdunyasi.com</p>
+                    </div>
+                </div>
+                <div class="info-line">
+                    <div class="icon-box"><i class="fa-solid fa-phone"></i></div>
+                    <div>
+                        <h4>Telefon</h4>
+                        <p>+90 (212) 555 00 00</p>
+                    </div>
+                </div>
+
+                <div class="social-links">
+                    <a href="javascript:void(0)" class="social-icon"><i class="fa-brands fa-instagram"></i></a>
+                    <a href="javascript:void(0)" class="social-icon"><i class="fa-brands fa-twitter"></i></a>
+                    <a href="javascript:void(0)" class="social-icon"><i class="fa-brands fa-linkedin-in"></i></a>
+                </div>
+            </div>
+
+            <div class="contact-form glass-effect">
+                <form id="contactForm">
+                    <div class="form-group">
+                        <label>Adınız Soyadınız</label>
+                        <div class="input-wrapper">
+                            <i class="fa-regular fa-user"></i>
+                            <input type="text" placeholder="Ad Soyad" required>
+                        </div>
+                    </div>
+                    <div class="form-group">
+                        <label>E-Posta Adresiniz</label>
+                        <div class="input-wrapper">
+                            <i class="fa-regular fa-envelope"></i>
+                            <input type="email" placeholder="ornek@mail.com" required>
+                        </div>
+                    </div>
+                    <div class="form-group">
+                        <label>Mesajınız</label>
+                        <textarea rows="4" placeholder="Size nasıl yardımcı olabilirim?" required></textarea>
+                    </div>
+                    <button type="submit" class="btn btn-primary btn-block">Mesajı Gönder <i class="fa-regular fa-paper-plane"></i></button>
+                </form>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer glass-effect">
+        <div class="container">
+            <p>&copy; 2026 Kitap Dünyası E-Ticaret A.Ş. | Zerda Sever </p>
+        </div>
+    </footer>
+
+
+    <!-- MODAL VE POPUPLAR -->
+
+    <!-- Genel Arka Plan Karartması -->
+    <div id="modalOverlay" class="modal-overlay"></div>
+
+    <!-- 1. Kitap Detay Sayfası / Modalı -->
+    <div id="bookDetailModal" class="custom-modal glass-effect">
+        <button class="close-btn" onclick="closeAllModals()"><i class="fa-solid fa-xmark"></i></button>
+        <div class="modal-body" id="detailModalBody">
+            <!-- JS İçeriği Buraya Gelecek -->
+        </div>
+    </div>
+
+    <!-- 2. Sipariş Formu Paneli -->
+    <div id="orderFormModal" class="custom-modal glass-effect">
+        <button class="close-btn" onclick="closeAllModals()"><i class="fa-solid fa-xmark"></i></button>
+        <h3 class="modal-title">Sipariş Formu</h3>
+        <p class="modal-desc">Lütfen teslimat bilgilerinizi eksiksiz girin.</p>
+
+        <div class="order-form">
+            <div class="form-group">
+                <label>Ad Soyad</label>
+                <div class="input-wrapper">
+                    <i class="fa-solid fa-user"></i>
+                    <input type="text" id="orderName" placeholder="Adınız Soyadınız">
+                </div>
+            </div>
+            <div class="form-group">
+                <label>Telefon Numarası</label>
+                <div class="input-wrapper">
+                    <i class="fa-solid fa-phone"></i>
+                    <input type="tel" id="orderPhone" placeholder="05XX XXX XX XX">
+                </div>
+            </div>
+            <div class="form-group">
+                <label>Teslimat Adresi</label>
+                <textarea id="orderAddress" rows="3" placeholder="Açık adresinizi giriniz..."></textarea>
+            </div>
+
+            <div class="payment-selection">
+                <h4>Ödeme Yöntemi Seçimi</h4>
+                <div class="payment-method" id="paymentMethodContainer">
+                    <input type="checkbox" id="payOnDoor" name="payment" onchange="document.getElementById('paymentMethodContainer').classList.toggle('active', this.checked)">
+                    <label for="payOnDoor" style="cursor: pointer; width: 100%;">
+                        <i class="fa-solid fa-hand-holding-dollar"></i> Kapıda Ödeme
+                    </label>
+                </div>
+            </div>
+
+            <!-- Uyarı Mesajı Alanı -->
+            <div id="formAlertMessage" class="alert-message error" style="display:none;">
+                <i class="fa-solid fa-circle-exclamation"></i> <span>Lütfen tüm alanları doldurun!</span>
+            </div>
+
+            <div class="modal-actions mt-3">
+                <button class="btn btn-outline" onclick="openBookDetail(selectedBook.id)">Geri Dön</button>
+                <button class="btn btn-primary" onclick="processOrder()">Siparişi Tamamla <i class="fa-solid fa-check"></i></button>
+            </div>
+        </div>
+    </div>
+
+    <!-- 3. Başarılı Sipariş Ekranı -->
+    <div id="successModal" class="custom-modal glass-effect text-center mx-auto">
+        <div class="success-icon-wrapper">
+            <i class="fa-solid fa-check"></i>
+        </div>
+        <h3 class="modal-title mt-2">Sipariş Alındı!</h3>
+        <p class="modal-desc success-desc" id="successDesc">Siparişiniz kapıda ödeme yöntemiyle alınmıştır.</p>
+        
+        <div class="receipt-box" id="receiptBox"></div>
+
+        <button class="btn btn-primary mt-3 btn-block" onclick="closeAllModals()">Pencereyi Kapat</button>
+    </div>
+
+    <!-- Custom Alert Yapısı -->
+    <div id="customToast" class="custom-toast glass-effect">
+        <div class="toast-icon"><i class="fa-solid fa-circle-info"></i></div>
+        <div class="toast-message" id="toastMessage">Uyarı mesajı!</div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
